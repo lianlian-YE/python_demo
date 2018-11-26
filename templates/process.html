@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block new_content %}
+<table class="table table-striped">
+    <tr>
+        <td>进程名</td>
+        <td>状态</td>
+        <td>创建时间</td>
+        <td>内存占用率</td>
+    </tr>
+   {% for process in processes %}
+    <tr>
+        <td>{{ process[0] }}</td>
+        <td>{{ process[1] }}</td>
+        <td>{{ process[2] }}</td>
+        <td>{{ process[3] }}</td>
+    </tr>
+     {% endfor %}
+</table>
+{% endblock %}
+

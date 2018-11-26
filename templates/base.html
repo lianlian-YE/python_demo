@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block content %}
+ <div class="col-lg-10 col-lg-offset-1" style="background-color: beige">
+    <ul class="nav nav-pills " style="background-color: black">
+      <li role="presentation" ><a href="/sys/">系统</a></li>
+      <li role="presentation"><a href="/cpu/">CPU</a></li>
+      <li role="presentation"><a href="/ram/">内存</a></li>
+      <li role="presentation"><a href="/disk/">硬盘</a></li>
+      <li role="presentation"><a href="/process/">进程</a></li>
+    </ul>
+
+{% block new_content %}
+    {% endblock %}
+{% endblock %}
+ </div>

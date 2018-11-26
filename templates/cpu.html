@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block new_content %}
+<table class="table table-striped">
+    <tr>
+        <td>物理CPU核心数</td>
+        <td>{{ cpu.p_CPU }}</td>
+    </tr>
+     <tr>
+        <td>逻辑CPU核心数</td>
+        <td>{{ cpu.CPU }}</td>
+    </tr>
+     <tr>
+        <td>最近1分钟平均负载</td>
+        <td>{{ cpu.averageload_1 }}</td>
+    </tr>
+     <tr>
+        <td>最近5分钟平均负载</td>
+        <td>{{ cpu.averageload_5 }}</td>
+    </tr>
+    <tr>
+        <td>最近15分钟平均负载</td>
+        <td>{{ cpu.averageload_15 }}</td>
+    </tr>
+     <tr>
+        <td>user</td>
+        <td>{{ cpu.user }}</td>
+    </tr>
+     <tr>
+        <td>系统</td>
+        <td>{{ cpu.system }}</td>
+    </tr>
+     <tr>
+        <td>空闲</td>
+        <td>{{ cpu.idle }}</td>
+    </tr>
+ <tr>
+        <td>正在运行频率</td>
+        <td>{{ cpu.nowfrequency }}</td>
+    </tr>
+ <tr>
+        <td>最小运行频率</td>
+        <td>{{ cpu.minfrequency }}</td>
+    </tr>
+ <tr>
+        <td>最大运行频率</td>
+        <td>{{ cpu.maxfrequency }}</td>
+    </tr>
+</table>
+{% endblock %}
+

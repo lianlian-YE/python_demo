@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block new_content %}
+<table class="table table-striped">
+    <tr>
+        <td>设备</td>
+        <td>挂载点</td>
+        <td>类型</td>
+        <td>选项</td>
+    </tr>
+   {% for disk in disks %}
+    <tr>
+        <td>{{ disk.device }}</td>
+        <td>{{ disk.mountpoint}}</td>
+        <td>{{ disk.fstype  }}</td>
+        <td>{{ disk.opts  }}</td>
+    </tr>
+     {% endfor %}
+</table>
+{% endblock %}
+

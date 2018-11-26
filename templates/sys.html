@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block new_content %}
+<table class="table table-striped">
+    <tr>
+        <td>操作系统</td>
+        <td>{{ syss.system }}</td>
+    </tr>
+     <tr>
+        <td>系统版本号</td>
+        <td>{{ syss.version }}</td>
+    </tr>
+     <tr>
+        <td>系统位数</td>
+        <td>{{ syss.architecture }}</td>
+    </tr>
+     <tr>
+        <td>类型</td>
+        <td>{{ syss.machine }}</td>
+    </tr>
+    <tr>
+        <td>处理器信息</td>
+        <td>{{ syss.processor }}</td>
+    </tr>
+     <tr>
+        <td>现在时间</td>
+        <td>{{ now_time }}</td>
+    </tr>
+     <tr>
+        <td>开机时间</td>
+        <td>{{ start_time }}</td>
+    </tr>
+     <tr>
+        <td>运行时间</td>
+        <td>{{ syss.run_time }}</td>
+    </tr>
+</table>
+{% endblock %}
+
